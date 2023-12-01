@@ -46,12 +46,19 @@ console.log(team);
 for (i = 0; i < team.length; i++) {
 
     let teamIesimo = team[i];
-    const nomeTeam = teamIesimo.nome;
-    const cognomeTeam = teamIesimo.cognome;
-    const ruoloTeam = teamIesimo.ruolo;
-    const imgTeam = teamIesimo.img;
+    /* let nomeTeam = teamIesimo.nome;
+    let cognomeTeam = teamIesimo.cognome;
+    let ruoloTeam = teamIesimo.ruolo;
+    let imgTeam = teamIesimo.img; */
 
-    console.log(nomeTeam, cognomeTeam, ruoloTeam, imgTeam);
+    /* console.log(nomeTeam, cognomeTeam, ruoloTeam, imgTeam); */
+
+    for (let key in teamIesimo) {
+        console.log(key, teamIesimo[key]);
+    }
+
 
 }
+
+
 
